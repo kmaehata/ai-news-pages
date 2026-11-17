@@ -1,5 +1,13 @@
 [
  {
+  "kind": "daily",
+  "id": "2026-11-18",
+  "date": "2026-11-18",
+  "title": "AI デイリー — 2026-11-18",
+  "path": "daily/2026-11-18.html",
+  "lead": "OpenAI が GPT-6.2 Astra / Sol を公開。Astra の API 価格は前世代より約20%安い。"
+ },
+ {
   "kind": "weekly",
   "id": "2026-W47",
   "date": "2026-11-17",

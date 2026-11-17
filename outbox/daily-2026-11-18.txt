@@ -1,0 +1,22 @@
+*🤖 AI デイリー — 2026-11-18*
+
+• OpenAI が GPT-6.2 Astra / Sol を公開。Astra の API 価格は前世代より約20%安い。
+• Microsoft が Ignite で自社の MAI モデル群を発表。MAI Code 2 は GitHub Copilot で一般提供。
+• Claude API に、利用者側の Claude 組織に課金できる Linked billing(beta)が追加。
+
+*■ OpenAI / Anthropic / Google*
+• OpenAI が GPT-6.2 Astra と GPT-6.2 Sol を公開
+• OpenAI が外部の安全性評価機関4団体と契約(報道ベース)
+• Gemini アプリの Tasks が日本を含む6か国で無料に
+
+*■ その他のモデル発表*
+• Microsoft が Ignite で MAI Code 2 など自社モデル群を発表
+
+*■ 開発手法・ツール*
+• Claude API に Linked billing(beta)
+• GitHub Copilot app に Azure DevOps 連携と browser use(preview)
+
+*■ IT フリーランス市場*
+• 🇯🇵 レバテック調査: IT フリーランス活用企業の約7割が「期待以上」、増やしたい職種1位は AI エンジニア
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-18.html|全文を開く>
