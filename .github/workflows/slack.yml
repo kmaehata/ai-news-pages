@@ -1,0 +1,61 @@
+# outbox/ に追加・更新された Slack 本文を、ページの公開を待ってから Slack に投稿する。
+name: Slack に投稿
+on:
+  push:
+    branches: [main]
+    paths: ["outbox/**"]
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "投稿し直す outbox のファイル(例: outbox/daily-2026-11-17.txt)"
+        required: true
+
+concurrency:
+  group: slack-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 投稿する
+        env:
+          SLACK_WEBHOOK_DAILY: ${{ secrets.SLACK_WEBHOOK_DAILY }}
+          SLACK_WEBHOOK_WEEKLY: ${{ secrets.SLACK_WEBHOOK_WEEKLY }}
+          BEFORE: ${{ github.event.before }}
+          INPUT_FILE: ${{ github.event.inputs.file }}
+        run: |
+          set -euo pipefail
+          if [ -n "${INPUT_FILE:-}" ]; then
+            files="$INPUT_FILE"
+          elif [ -z "${BEFORE:-}" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            files=$(git show --name-only --diff-filter=AM --pretty=format: HEAD -- outbox/)
+          else
+            files=$(git diff --name-only --diff-filter=AM "$BEFORE" HEAD -- outbox/)
+          fi
+          [ -z "$files" ] && { echo "投稿するファイルはありません"; exit 0; }
+          for f in $files; do
+            name=$(basename "$f" .txt)
+            kind=${name%%-*}
+            id=${name#*-}
+            case "$kind" in
+              daily) hook="$SLACK_WEBHOOK_DAILY" ;;
+              weekly) hook="$SLACK_WEBHOOK_WEEKLY" ;;
+              *) echo "不明な種類: $f"; continue ;;
+            esac
+            if [ -z "$hook" ]; then echo "secret が未登録: $kind"; exit 1; fi
+            url="https://kmaehata.github.io/ai-news-pages/$kind/$id.html"
+            sha=$(git rev-parse --short HEAD)
+            # ページが今回の commit の内容で公開されるまで、最大6分待つ
+            for i in $(seq 1 24); do
+              code=$(curl -s -o page.html -w '%{http_code}' "$url?v=$sha" || true)
+              if [ "$code" = "200" ] && cmp -s page.html "$kind/$id.html"; then echo "公開を確認: $url"; break; fi
+              sleep 15
+            done
+            jq -n --rawfile t "$f" '{text: $t, unfurl_links: false}' > body.json
+            curl -sS -f -X POST -H 'Content-Type: application/json' --data @body.json "$hook"
+            echo " → 投稿しました: $f"
+          done
