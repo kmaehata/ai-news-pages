@@ -1,0 +1,14 @@
+*🤖 AI デイリー — 2026-11-17*
+
+• Alibaba の Qwen4-Max が API で一般提供。前世代よりタスク当たりコストを6割以上下げたとされる。
+• Tencent が低価格の Hy4 flash を公開。入力 $0.07/1M tokens 前後と報道。
+• Claude Code v2.1.326 で agent teams と Code Mode の併用が可能に。
+
+*■ その他のモデル発表*
+• Alibaba Qwen4-Max が API で一般提供
+• Tencent Hy4 flash を公開
+
+*■ 開発手法・ツール*
+• Claude Code v2.1.326
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-17.html|全文を開く>
