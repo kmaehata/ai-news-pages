@@ -1,0 +1,13 @@
+*🤖 AI デイリー — 2026-11-19*
+
+• Google が Gemini 4 Neon を公開。Carbon 並みの性能を速く安く出す中位モデルで、API 価格は $3 / $15(報道ベース)。
+• Gemini 4 は約1か月で Argon・Carbon・Hydrogen に続く4モデル目。
+• Claude Code v2.1.327 で、MCP サーバーの設定を stdin から渡せるようになり、token をコマンドラインに残さずに済む。
+
+*■ OpenAI / Anthropic / Google*
+• Google が Gemini 4 Neon を公開
+
+*■ 開発手法・ツール*
+• Claude Code v2.1.327
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-19.html|全文を開く>
