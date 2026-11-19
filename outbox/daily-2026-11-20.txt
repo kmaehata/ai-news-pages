@@ -1,0 +1,14 @@
+*🤖 AI デイリー — 2026-11-20*
+
+• Anthropic が Nasdaq に上場(ティッカー ANT)。公開価格 $83、調達額は約 $81.3B で SpaceX を抜き過去最大の IPO(報道ベース)。
+• 初値は $111.50、初日終値は $97.17 で公開価格比 +17%。
+• OpenAI は QuickBooks・Xero・NetSuite などとつなぐ ChatGPT for Accounting を公開。Claude Code v2.1.328 は cloud 上の auto mode と /code-review の刷新。
+
+*■ OpenAI / Anthropic / Google*
+• Anthropic が Nasdaq に上場、IPO 調達額は過去最大の約 $81.3B(報道ベース)
+• OpenAI が ChatGPT for Accounting を公開(報道ベース)
+
+*■ 開発手法・ツール*
+• Claude Code v2.1.328
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-20.html|全文を開く>
