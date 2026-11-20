@@ -1,0 +1,14 @@
+*🤖 AI デイリー — 2026-11-21*
+
+• OpenAI は常時稼働エージェント Dots を $20 の ChatGPT Plus の一部で試験提供し、Business Standard にも広げた(報道ベース)。
+• Codex CLI 0.171.0 は GPT-6.2 Sol を既定モデルにし、TUI workspace を既定で有効化。
+• Claude Code v2.1.329 は /tasks に scheduled task や /loop を集約し、hooks の信頼確認や Code Mode を多数修正。
+
+*■ OpenAI / Anthropic / Google*
+• OpenAI が Dots を ChatGPT Plus の一部で試験提供、Business Standard にも拡大(報道ベース)
+
+*■ 開発手法・ツール*
+• Codex CLI 0.171.0
+• Claude Code v2.1.329
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-21.html|全文を開く>
