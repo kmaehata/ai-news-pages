@@ -1,0 +1,16 @@
+*🤖 AI デイリー — 2026-11-22*
+
+• Thinking Machines が 32GB の Mac でも動く open weight の looped transformer、Inkling 2 Mini を Apache 2.0 で公開。
+• Claude Code v2.1.330 は scheduled task と /loop の上限を30日に延ばし、enterprise sign-in と chart を描く easel mod を追加。
+• 米労働省が独立請負人の判定ルールを改定し、2024年ルールを廃止して「管理の度合い」と「損益の機会」の2要素重視に戻した。
+
+*■ その他のモデル発表*
+• Thinking Machines が open weight の Inkling 2 Mini を公開
+
+*■ 開発手法・ツール*
+• Claude Code v2.1.330
+
+*■ IT フリーランス市場*
+• 🌏 米労働省が独立請負人の判定ルールを改定、2024年ルールを廃止
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-22.html|全文を開く>

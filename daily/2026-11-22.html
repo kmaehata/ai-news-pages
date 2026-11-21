@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>AI デイリー — 2026-11-22</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#1d2129;--sub:#5b6370;--line:#e3e6ea;--accent:#2f6fed;--op-bg:#fff7e6;--op-line:#f0b429;--lead-bg:#eef3ff}
+@media (prefers-color-scheme:dark){:root{--bg:#111316;--card:#1b1e23;--text:#e8eaed;--sub:#9aa3ae;--line:#2c3036;--accent:#7aa5ff;--op-bg:#2a2414;--op-line:#c9962a;--lead-bg:#1a2233}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:16px 16px 48px}
+header{padding:8px 0 12px}
+.kind{font-size:13px;color:var(--sub);letter-spacing:.04em}
+h1{font-size:22px;line-height:1.4;margin:4px 0 0}
+.lead{background:var(--lead-bg);border-radius:14px;padding:14px 16px;margin:12px 0 8px}
+.lead ul{margin:0;padding-left:1.2em}
+.lead li{margin:2px 0}
+nav{display:flex;gap:8px;overflow-x:auto;padding:8px 0 4px;margin:0 -16px;padding-left:16px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;font-size:13px;color:var(--accent);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;text-decoration:none;white-space:nowrap}
+section{margin-top:28px;scroll-margin-top:12px}
+h2{font-size:18px;margin:0 0 10px;padding-left:10px;border-left:4px solid var(--accent);line-height:1.4}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.card .tag{display:inline-block;font-size:12px;color:var(--sub);margin-bottom:2px}
+.card h3{font-size:16px;line-height:1.5;margin:0 0 6px}
+.card h3 a{color:var(--text);text-decoration:none}
+.card p{margin:0;color:var(--text)}
+.card .src{display:inline-block;margin-top:8px;font-size:13px;color:var(--accent);text-decoration:none;word-break:break-all}
+.opinion{background:var(--op-bg);border-left:4px solid var(--op-line);border-radius:10px;padding:12px 14px;margin:12px 0}
+.opinion b{display:block;font-size:13px;margin-bottom:4px}
+.conf{font-size:12px;color:var(--sub);margin-top:6px}
+.review{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:12px 16px}
+.notes{font-size:13px;color:var(--sub);margin-top:36px;border-top:1px solid var(--line);padding-top:12px}
+.list a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:10px 0;color:var(--text);text-decoration:none}
+.list .d{font-size:12px;color:var(--sub)}
+.list .t{font-weight:600}
+.list .l{font-size:14px;color:var(--sub);margin-top:2px}
+footer{margin-top:32px;font-size:13px}
+footer a{color:var(--accent)}
+</style></head>
+<body><div class="wrap"><header><div class="kind">🤖 AI・フリーランス デイリー</div><h1>AI デイリー — 2026-11-22</h1></header><div class="lead"><ul><li>Thinking Machines が 32GB の Mac でも動く open weight の looped transformer、Inkling 2 Mini を Apache 2.0 で公開。</li><li>Claude Code v2.1.330 は scheduled task と /loop の上限を30日に延ばし、enterprise sign-in と chart を描く easel mod を追加。</li><li>米労働省が独立請負人の判定ルールを改定し、2024年ルールを廃止して「管理の度合い」と「損益の機会」の2要素重視に戻した。</li></ul></div><nav><a href="#s0">その他のモデル発表</a><a href="#s1">開発手法・ツール</a><a href="#s2">IT フリーランス市場</a></nav><section id="s0"><h2>その他のモデル発表</h2><div class="card"><h3><a href="https://thinkingmachines.ai/news/inkling-2-mini/">Thinking Machines が open weight の Inkling 2 Mini を公開</a></h3><p>11/20(米国時間)公開。総パラメータ約26B の MoE で、中間の12層を1トークンあたり3回繰り返す looped transformer(保存は24層、論理的には48層)。内部で多く推論する分、少ないトークンで答えに届くという設計。テキストと画像の入力、1M context、Apache 2.0。<br>weights は Hugging Face にあり、Tinker で推論・fine-tuning も可能。Ollama では 32GB 以上の Mac で動く。active パラメータは 3.4B〜5.4B と情報源で食い違う。事実の想起や細かい指示追従が弱く、デバッグ時に推論が繰り返しがちという制約を公式が挙げている。</p><a class="src" href="https://thinkingmachines.ai/news/inkling-2-mini/">ソースを開く ↗</a></div></section><section id="s1"><h2>開発手法・ツール</h2><div class="card"><h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.330">Claude Code v2.1.330</a></h3><p>11/20(UTC)公開。recurring の scheduled task と /loop が最大30日まで動くようになった(従来は7日、既存のタスクは7日のまま)。claude auth login 後に組織の設定とクラウドプロバイダー・gateway を自動で使う enterprise sign-in、chart を描く組み込みの easel mod(Pro・Max ほか、macOS・Linux)を追加。<br>root・home・作業フォルダなどを狙う rm は承認が必要になり、承認者がいない環境では拒否される。長い会話の compact 後のフリーズ、並行実行時の設定の消失、他セッションが使う worktree を消す不具合などを修正。2.1.329 で消した max_tokens 超過時の自動リトライは復活した。</p><a class="src" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.330">ソースを開く ↗</a></div></section><section id="s2"><h2>IT フリーランス市場</h2><div class="card"><span class=tag>🌏 海外</span><h3><a href="https://www.dol.gov/newsroom/releases/whd/whd20261119">米労働省が独立請負人の判定ルールを改定、2024年ルールを廃止</a></h3><p>11/19(米国時間)発表。FLSA(公正労働基準法)などで従業員と独立請負人を分ける基準を改め、Biden 政権の2024年ルール(2025年5月から執行停止)を廃止して2021年ルールに近い形に戻した。<br>最も重視するのは「仕事に対する管理の度合い」と「自らの工夫・投資による損益の機会」の2要素。Federal Register 掲載の60日後に施行。税法や州法の判定には影響しないため、カリフォルニア州など厳しい州法のある地域では従来どおりの対応が要る。</p><a class="src" href="https://www.dol.gov/newsroom/releases/whd/whd20261119">ソースを開く ↗</a></div></section><div class="notes">確認した主な情報源: Claude Code / OpenAI Codex の GitHub releases、米労働省ニュースリリース、Thinking Machines・Hugging Face・Artificial Analysis の Inkling 2 Mini 関連ページ(検索結果経由)、各種 AI ニュースのまとめ、PR TIMES・ASCII などの国内フリーランス関連記事。openai.com、thinkingmachines.ai、huggingface.co、venturebeat.com などはこの実行環境から直接取得できず、検索結果で内容を確認した。見送り: GPT-Live-1.1 の API 提供(OpenAIDevs の投稿が 11/19 20:00 UTC で対象期間外)、ChatGPT 音声入力のリアルタイム文字起こし・OpenAI の MedChemBench・Codex による障害調査事例(一次情報と時刻を確認できず)、Codex CLI 0.171.0(11/21 既報)と 0.173.0 alpha(pre-release)、Gemini CLI v0.70.0(定例更新)、Gemini 4 Neon の Copilot 追加(11/18 で対象期間外)。OpenAI / Anthropic / Google の対象期間内の大きな発表は確認できなかった。国内フリーランスはフリーランスボード(11/10)、ギークス(11/11)、エン(11/9)など対象期間外のみ。</div><footer><a href="../index.html">← これまでの一覧</a></footer></div></body></html>

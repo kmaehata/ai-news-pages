@@ -1,6 +1,14 @@
 [
  {
   "kind": "daily",
+  "id": "2026-11-22",
+  "date": "2026-11-22",
+  "title": "AI デイリー — 2026-11-22",
+  "path": "daily/2026-11-22.html",
+  "lead": "Thinking Machines が 32GB の Mac でも動く open weight の looped transformer、Inkling 2 Mini を Apache 2.0 で公開。"
+ },
+ {
+  "kind": "daily",
   "id": "2026-11-21",
   "date": "2026-11-21",
   "title": "AI デイリー — 2026-11-21",
