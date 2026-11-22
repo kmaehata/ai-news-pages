@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>AI デイリー — 2026-11-23</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#1d2129;--sub:#5b6370;--line:#e3e6ea;--accent:#2f6fed;--op-bg:#fff7e6;--op-line:#f0b429;--lead-bg:#eef3ff}
+@media (prefers-color-scheme:dark){:root{--bg:#111316;--card:#1b1e23;--text:#e8eaed;--sub:#9aa3ae;--line:#2c3036;--accent:#7aa5ff;--op-bg:#2a2414;--op-line:#c9962a;--lead-bg:#1a2233}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:16px 16px 48px}
+header{padding:8px 0 12px}
+.kind{font-size:13px;color:var(--sub);letter-spacing:.04em}
+h1{font-size:22px;line-height:1.4;margin:4px 0 0}
+.lead{background:var(--lead-bg);border-radius:14px;padding:14px 16px;margin:12px 0 8px}
+.lead ul{margin:0;padding-left:1.2em}
+.lead li{margin:2px 0}
+nav{display:flex;gap:8px;overflow-x:auto;padding:8px 0 4px;margin:0 -16px;padding-left:16px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;font-size:13px;color:var(--accent);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;text-decoration:none;white-space:nowrap}
+section{margin-top:28px;scroll-margin-top:12px}
+h2{font-size:18px;margin:0 0 10px;padding-left:10px;border-left:4px solid var(--accent);line-height:1.4}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.card .tag{display:inline-block;font-size:12px;color:var(--sub);margin-bottom:2px}
+.card h3{font-size:16px;line-height:1.5;margin:0 0 6px}
+.card h3 a{color:var(--text);text-decoration:none}
+.card p{margin:0;color:var(--text)}
+.card .src{display:inline-block;margin-top:8px;font-size:13px;color:var(--accent);text-decoration:none;word-break:break-all}
+.opinion{background:var(--op-bg);border-left:4px solid var(--op-line);border-radius:10px;padding:12px 14px;margin:12px 0}
+.opinion b{display:block;font-size:13px;margin-bottom:4px}
+.conf{font-size:12px;color:var(--sub);margin-top:6px}
+.review{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:12px 16px}
+.notes{font-size:13px;color:var(--sub);margin-top:36px;border-top:1px solid var(--line);padding-top:12px}
+.list a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:10px 0;color:var(--text);text-decoration:none}
+.list .d{font-size:12px;color:var(--sub)}
+.list .t{font-weight:600}
+.list .l{font-size:14px;color:var(--sub);margin-top:2px}
+footer{margin-top:32px;font-size:13px}
+footer a{color:var(--accent)}
+</style></head>
+<body><div class="wrap"><header><div class="kind">🤖 AI・フリーランス デイリー</div><h1>AI デイリー — 2026-11-23</h1></header><div class="lead"><ul><li>Anthropic の数学者 Levent Alpöge が Claude と作った Riemann 予想の Lean 証明(約1700万行)が正しいと、Lean FRO と Mathlib Initiative が共同声明で認めた。</li><li>機械が検証したのは「証明が正しいか」までで、人が読める解説はまだ無い。Clay 研究所の懸賞の条件(論文の出版と2年の検証)もまだ満たしていない。</li><li>週末のため、ほかの3項目は対象期間内に大きな発表を確認できなかった。</li></ul></div><section id="s0"><h2>OpenAI / Anthropic / Google</h2><div class="card"><h3><a href="https://x.com/leanprover/status/2124159121645801562">Claude と作った Riemann 予想の Lean 証明を Lean FRO・Mathlib が「正しい」と認定</a></h3><p>11/21(UTC)に Lean FRO と Mathlib Initiative が共同声明を出した。Anthropic の数学者 Levent Alpöge は 11/20 に、Claude と一緒に作った Riemann 予想の証明を約1700万行の Lean ライブラリとして公開しており、コミュニティが1日かけて確かめた。<br>確かめ方: 定理の主張を Mathlib を import するだけの別ファイルに切り出し、comparator と con-leche という独立した2つのツールで、ライブラリが証明した定理が Mathlib の Riemann 予想の主張と一致することを確認した。<br>制約: 人が読める解説は無く、AI が書いた説明は25万ページを超えるという(報道ベース)。声明自身も、証明がなぜ成り立つかの理解は今後の数学者の仕事だとしている。Clay 研究所はまだ未解決扱いで、計算資源のコストも公表されていない。AI が最難関級の未解決問題で形式検証つきの証明に届いた例として、エンジニアにも形式検証と agent の組み合わせの力を示す出来事。</p><a class="src" href="https://x.com/leanprover/status/2124159121645801562">ソースを開く ↗</a></div></section><div class="notes">確認した主な情報源: Lean 公式 X の共同声明の投稿(投稿 ID から 2026-11-21 15:12 UTC と確認)、Science・The Next Web・各種報道(検索結果経由)、Claude Code / OpenAI Codex の GitHub releases、OpenAI・Anthropic・Google DeepMind 関連の検索、国内外のフリーランス関連の検索。leanprover の声明本文ページ、unite.ai、officechai.com、sharedsapience.substack.com はこの実行環境から取得できなかった。見送り: Alpöge の証明の公開そのもの(11/20 で対象期間外。今回は対象期間内の検証結果として扱った)、Claude Code(v2.1.330 は 11/22 既報、新版なし)、Codex CLI 0.173.0 alpha(pre-release)、GitHub Copilot CLI 1.0.115 系(prerelease の小さな修正)、Kimi K3.1 Pro Prime(11/20、まとめサイト1件のみで一次情報を確認できず)、Anthropic のモバイル刷新と Team・Enterprise 向け computer use beta(11/20 で対象期間外、一次情報未確認)、OpenAI の研究者向け助成の受付開始(11/16 発表済み)。国内フリーランスはフリーランスボード(11/7時点の単価調査)・フリコン(11/19時点)など、対象期間内の公表データを確認できなかった。海外も Fiverr 調査(11/12)など対象期間外のみ。</div><footer><a href="../index.html">← これまでの一覧</a></footer></div></body></html>

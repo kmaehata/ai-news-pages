@@ -1,0 +1,10 @@
+*🤖 AI デイリー — 2026-11-23*
+
+• Anthropic の数学者 Levent Alpöge が Claude と作った Riemann 予想の Lean 証明(約1700万行)が正しいと、Lean FRO と Mathlib Initiative が共同声明で認めた。
+• 機械が検証したのは「証明が正しいか」までで、人が読める解説はまだ無い。Clay 研究所の懸賞の条件(論文の出版と2年の検証)もまだ満たしていない。
+• 週末のため、ほかの3項目は対象期間内に大きな発表を確認できなかった。
+
+*■ OpenAI / Anthropic / Google*
+• Claude と作った Riemann 予想の Lean 証明を Lean FRO・Mathlib が「正しい」と認定
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-23.html|全文を開く>

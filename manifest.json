@@ -1,6 +1,14 @@
 [
  {
   "kind": "daily",
+  "id": "2026-11-23",
+  "date": "2026-11-23",
+  "title": "AI デイリー — 2026-11-23",
+  "path": "daily/2026-11-23.html",
+  "lead": "Anthropic の数学者 Levent Alpöge が Claude と作った Riemann 予想の Lean 証明(約1700万行)が正しいと、Lean FRO と Mathlib Initiative が共同声明で認めた。"
+ },
+ {
+  "kind": "daily",
   "id": "2026-11-22",
   "date": "2026-11-22",
   "title": "AI デイリー — 2026-11-22",
