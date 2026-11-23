@@ -1,5 +1,13 @@
 [
  {
+  "kind": "daily",
+  "id": "2026-11-24",
+  "date": "2026-11-24",
+  "title": "AI デイリー — 2026-11-24",
+  "path": "daily/2026-11-24.html",
+  "lead": "Anthropic が PR のレビュー・修正・承認判断までを agent に任せる Claude Ship(beta)を Team・Enterprise 向けに公開した。"
+ },
+ {
   "kind": "weekly",
   "id": "2026-W48",
   "date": "2026-11-23",

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>AI デイリー — 2026-11-24</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#1d2129;--sub:#5b6370;--line:#e3e6ea;--accent:#2f6fed;--op-bg:#fff7e6;--op-line:#f0b429;--lead-bg:#eef3ff}
+@media (prefers-color-scheme:dark){:root{--bg:#111316;--card:#1b1e23;--text:#e8eaed;--sub:#9aa3ae;--line:#2c3036;--accent:#7aa5ff;--op-bg:#2a2414;--op-line:#c9962a;--lead-bg:#1a2233}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:16px 16px 48px}
+header{padding:8px 0 12px}
+.kind{font-size:13px;color:var(--sub);letter-spacing:.04em}
+h1{font-size:22px;line-height:1.4;margin:4px 0 0}
+.lead{background:var(--lead-bg);border-radius:14px;padding:14px 16px;margin:12px 0 8px}
+.lead ul{margin:0;padding-left:1.2em}
+.lead li{margin:2px 0}
+nav{display:flex;gap:8px;overflow-x:auto;padding:8px 0 4px;margin:0 -16px;padding-left:16px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;font-size:13px;color:var(--accent);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;text-decoration:none;white-space:nowrap}
+section{margin-top:28px;scroll-margin-top:12px}
+h2{font-size:18px;margin:0 0 10px;padding-left:10px;border-left:4px solid var(--accent);line-height:1.4}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.card .tag{display:inline-block;font-size:12px;color:var(--sub);margin-bottom:2px}
+.card h3{font-size:16px;line-height:1.5;margin:0 0 6px}
+.card h3 a{color:var(--text);text-decoration:none}
+.card p{margin:0;color:var(--text)}
+.card .src{display:inline-block;margin-top:8px;font-size:13px;color:var(--accent);text-decoration:none;word-break:break-all}
+.opinion{background:var(--op-bg);border-left:4px solid var(--op-line);border-radius:10px;padding:12px 14px;margin:12px 0}
+.opinion b{display:block;font-size:13px;margin-bottom:4px}
+.conf{font-size:12px;color:var(--sub);margin-top:6px}
+.review{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:12px 16px}
+.notes{font-size:13px;color:var(--sub);margin-top:36px;border-top:1px solid var(--line);padding-top:12px}
+.list a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:10px 0;color:var(--text);text-decoration:none}
+.list .d{font-size:12px;color:var(--sub)}
+.list .t{font-weight:600}
+.list .l{font-size:14px;color:var(--sub);margin-top:2px}
+footer{margin-top:32px;font-size:13px}
+footer a{color:var(--accent)}
+</style></head>
+<body><div class="wrap"><header><div class="kind">🤖 AI・フリーランス デイリー</div><h1>AI デイリー — 2026-11-24</h1></header><div class="lead"><ul><li>Anthropic が PR のレビュー・修正・承認判断までを agent に任せる Claude Ship(beta)を Team・Enterprise 向けに公開した。</li><li>Z.ai は Loop Transformer を使った GLM-5.4 を Coding Plan 利用者に先行提供した。API と open weight は後日。</li><li>OpenAI は、地域の AI 専門家に月最大 $8,000 を払って中小企業を無償支援させる OpenWorks を米国20地域で始めた。</li></ul></div><nav><a href="#s0">OpenAI / Anthropic / Google</a><a href="#s1">その他のモデル発表</a><a href="#s2">開発手法・ツール</a><a href="#s3">IT フリーランス市場</a></nav><section id="s0"><h2>OpenAI / Anthropic / Google</h2><div class="card"><h3><a href="https://claude.com/resources/articles/introducing-claude-ship">Anthropic が Claude Ship を公開、PR のレビュー・CI 修正・承認判断を agent が担当(beta)</a></h3><p>11/23 公開。GitHub の pull request を「レビュー → 修正 → 承認判断」まで通す仕組みで、3つの agent からなる。Code Review(GA、Quick・Standard・Deep の3段階)、PR Steward(beta。失敗した CI・merge conflict・レビュー指摘に対応して push し、変更内容と戻し方をコメントする。承認・merge はしない)、Claude Approvals(beta。repo に置いたポリシーファイルに沿って定型的な変更を承認するか、人の承認を求める。まず observe-only で始めることを推奨)。<br>対象は Claude Team・Enterprise の GitHub repo。ZDR・HIPAA 構成・顧客管理鍵の組織は使えない。課金は token 量で、Code Review と PR Steward には管理者が上限を設定できる。開発者は Claude Code・desktop app の /ship(11/23 から順次)で、push から PR 作成・レビュー・修正までを一度に任せられる。「書く」から「出荷する」までを agent に寄せる流れの具体例。</p><a class="src" href="https://claude.com/resources/articles/introducing-claude-ship">ソースを開く ↗</a></div></section><section id="s1"><h2>その他のモデル発表</h2><div class="card"><h3><a href="https://x.com/ZixuanLi_/status/2124719275864670681">Z.ai が GLM-5.4 を Coding Plan で先行提供、初の Loop Transformer 採用の旗艦モデル</a></h3><p>11/23(JST 13時台)に Z.ai の Zixuan Li が公表。GLM Coding Plan の全利用者が使え、画像入力(vision)とコーディング性能の向上が売り。週の利用枠は GLM-5.3 より50%多い。Claude Code からは glm-5.4[1m] を指定して使える。<br>Z.ai によると、層を繰り返し使う Loop Transformer を採用した初の旗艦モデルで、約750B 規模・28層を2回通す構成と報じられている(報道ベース)。通常の API は安全性評価のあと、open weight は安全対策のあとに公開する予定。公開時点でベンチマークは出ておらず、性能は未検証。</p><a class="src" href="https://x.com/ZixuanLi_/status/2124719275864670681">ソースを開く ↗</a></div></section><section id="s2"><h2>開発手法・ツール</h2><div class="card"><h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.331">Claude Code v2.1.331</a></h3><p>11/23 公開。Code Mode が Bedrock・Google Cloud Agent Platform・Microsoft Foundry・Claude Platform on AWS のターミナルでも使えるようになった。claude doctor に API 接続チェック、圧縮応答を切ってしまう proxy 向けの CLAUDE_CODE_DISABLE_RESPONSE_COMPRESSION、plugin の optionalDependencies を追加。<br>修正: 壊れた応答で MCP ツール呼び出しが最大30分止まる問題、rewind 失敗時にファイルが消える問題など。注意点: 管理対象の marketplace は 11/30 以降、既定で自動更新になる(&quot;autoUpdate&quot;: false で無効化)。Windows では HKLM のレジストリ設定が managed-settings.json より優先されるようになった。</p><a class="src" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.331">ソースを開く ↗</a></div></section><section id="s3"><h2>IT フリーランス市場</h2><div class="card"><span class=tag>🌏 海外</span><h3><a href="https://openai.com/openworks/">OpenAI が OpenWorks を開始、地域の AI 専門家に月最大 $8,000 を払い中小企業を無償支援</a></h3><p>11/23(米国時間)発表。技術を持つ個人や小さなチーム(AI・ソフトウェアのコンサルも可)を「OpenWorks Partner」として採用し、月最大 $8,000 の stipend とツール・ワークショップの支援を出す。Partner は毎月一定日数を地元の中小企業の支援にあて、月1回ワークショップを開く。支援を受ける企業は無料で、ChatGPT Business を3か月無償で使える。<br>対象は独立系の米国中小企業で、SaaS・VC 出資・PE 傘下の企業は除外。まず米国20地域で試行する。AI 導入支援を「フリーランスの仕事」として大手 AI 企業が直接お金を出す形で、AI 導入コンサルの需要と相場感を示す動き。必要な稼働日数と支給期間はページに明記されていない。</p><a class="src" href="https://openai.com/openworks/">ソースを開く ↗</a></div></section><div class="notes">確認した主な情報源: claude.com の Claude Ship 紹介記事、anthropic.com/news、Claude Code の GitHub releases(v2.1.331)、OpenAI Codex の GitHub releases、Zixuan Li の X 投稿(投稿 ID から 2026-11-23 04:18 UTC と確認)、OpenAI 公式 X と openai.com/openworks の検索結果(投稿 ID から 2026-11-23 17:44 UTC と確認)、各種報道(検索結果経由)。openai.com、prtimes.jp、marktechpost.com、9to5mac.com はこの実行環境から取得できなかった。見送り: Codex CLI 0.171.0-alpha.13.2・0.172.0-alpha.2.1(pre-release)、Google AI Mode の Drive・Wallet 連携(9to5Google の報道のみで一次情報未確認)、Gemini 4 Neon(11/19 既報)、OpenAI の perplexity 公開と学習上限の提案(11/22 とされるが一次情報と時刻を確認できず)。国内フリーランスは、フリーランスボード(11/10 発表)・フリコン(11/19 時点)・Findy(3月発表)など対象期間外のみ。公取委のフリーランス法の新しい勧告も対象期間内には確認できなかった。海外は OpenAI・Upwork の調査など既報のみ。</div><footer><a href="../index.html">← これまでの一覧</a></footer></div></body></html>

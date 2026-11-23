@@ -1,0 +1,19 @@
+*🤖 AI デイリー — 2026-11-24*
+
+• Anthropic が PR のレビュー・修正・承認判断までを agent に任せる Claude Ship(beta)を Team・Enterprise 向けに公開した。
+• Z.ai は Loop Transformer を使った GLM-5.4 を Coding Plan 利用者に先行提供した。API と open weight は後日。
+• OpenAI は、地域の AI 専門家に月最大 $8,000 を払って中小企業を無償支援させる OpenWorks を米国20地域で始めた。
+
+*■ OpenAI / Anthropic / Google*
+• Anthropic が Claude Ship を公開、PR のレビュー・CI 修正・承認判断を agent が担当(beta)
+
+*■ その他のモデル発表*
+• Z.ai が GLM-5.4 を Coding Plan で先行提供、初の Loop Transformer 採用の旗艦モデル
+
+*■ 開発手法・ツール*
+• Claude Code v2.1.331
+
+*■ IT フリーランス市場*
+• 🌏 OpenAI が OpenWorks を開始、地域の AI 専門家に月最大 $8,000 を払い中小企業を無償支援
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-24.html|全文を開く>
