@@ -1,0 +1,16 @@
+*🤖 AI デイリー — 2026-11-25*
+
+• Claude の artifact を Mac・Windows のデスクトップアプリとして入れられる「Install as app」が全プランで beta 公開された。
+• OpenAI と Cisco は、agent が書いた eBPF の「盾」でパッチ前の Linux 脆弱性を再起動なしで塞ぐ Shirudo を open source で公開した。
+• Claude API では Opus 4.5 の提供終了(2027/1/22)が告知された。使っている場合は移行計画が必要。
+
+*■ OpenAI / Anthropic / Google*
+• Claude の artifact を Mac・Windows アプリとして入れられる「Install as app」(beta)
+• OpenAI と Cisco が Shirudo を open source で公開、agent が書く eBPF の「盾」でパッチ前の脆弱性を防ぐ
+• GPT-6.2 が ChatGPT の Chat タブに、有料プランから順次(GPT-5.6 Sol は 12/23 で終了)
+
+*■ 開発手法・ツール*
+• Claude API: Opus 4.5 の提供終了を告知(2027/1/22)、ZDR を最上位モデルで使える EFS を beta 公開
+• Codex CLI 0.172.0
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-25.html|全文を開く>

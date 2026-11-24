@@ -1,6 +1,14 @@
 [
  {
   "kind": "daily",
+  "id": "2026-11-25",
+  "date": "2026-11-25",
+  "title": "AI デイリー — 2026-11-25",
+  "path": "daily/2026-11-25.html",
+  "lead": "Claude の artifact を Mac・Windows のデスクトップアプリとして入れられる「Install as app」が全プランで beta 公開された。"
+ },
+ {
+  "kind": "daily",
   "id": "2026-11-24",
   "date": "2026-11-24",
   "title": "AI デイリー — 2026-11-24",
