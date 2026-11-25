@@ -1,0 +1,13 @@
+*🤖 AI デイリー — 2026-11-26*
+
+• OpenAI が、専用の生物モデルではなく GPT-6 系の汎用モデルが推論とコードで protein を設計できるとする preprint を公開した。実験では 322 個中 35 個(10.9%)が標的に結合した。
+• Claude Code v2.1.332 が公開。MCP サーバーの skill が / メニューに出るようになり、Foundry・Agent Platform・Bedrock Mantle で sonnet・opus の別名が指すモデルが変わった。
+• その他のモデル発表と IT フリーランス市場は、対象期間内に一次情報で確認できる新しい話題が無かった。
+
+*■ OpenAI / Anthropic / Google*
+• OpenAI が「GPT-6 系モデルは推論とコードだけで protein を設計できる」とする preprint を公開、実験で 10.9% が結合
+
+*■ 開発手法・ツール*
+• Claude Code v2.1.332 — MCP サーバーの skill が / メニューに、PreSkillShellCommand hook 追加、モデル別名の指す先が変更
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-26.html|全文を開く>
