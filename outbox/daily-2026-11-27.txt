@@ -1,0 +1,10 @@
+*🤖 AI デイリー — 2026-11-27*
+
+• OpenAI が ChatGPT の Chat と Work の利用上限を1つにまとめる変更を、Pro の一部で始めた(報道ベース)。
+• Instant モデルの会話は上限の対象外のまま。OpenAI は「ごく一部のヘビーユーザーは上限に早く達する」としており、本格的な展開は12月の見込み。
+• その他のモデル発表、開発手法・ツール、IT フリーランス市場は、対象期間内に一次情報で確認できる新しい話題が無かった。
+
+*■ OpenAI / Anthropic / Google*
+• ChatGPT の Chat と Work が1つの利用上限に、Pro の一部から開始(報道ベース)
+
+📱 <https://kmaehata.github.io/ai-news-pages/daily/2026-11-27.html|全文を開く>
